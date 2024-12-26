@@ -1,8 +1,58 @@
-# React + Vite
+# Employee Management System (EMS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a practice Employee Management System built with React. It provides a simple setup to manage tasks for employees and admins.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Admin Dashboard**: Admins can create tasks and view all tasks assigned to employees.
+- **Employee Dashboard**: Employees can view their tasks, including new, active, completed, and failed tasks.
+- **Authentication**: Simple login system for admin and employees.
+- **Task Management**: Create, view, and manage tasks with different statuses.
+
+## Project Structure
+
+```
+.gitignore
+index.html
+package.json
+public/
+README.md
+src/
+    App.jsx
+    assets/
+    components/
+        Auth/
+            Login.jsx
+        Dashboard/
+            AdminDashboard.jsx
+            EmployeeDashboard.jsx
+        other/
+            AllTask.jsx
+            CreateTask.jsx
+            Header.jsx
+            TaskListNumbers.jsx
+        TaskList/
+            AcceptTask.jsx
+            CompleteTask.jsx
+            FailedTask.jsx
+            NewTask.jsx
+    context/
+        AuthProvider.jsx
+    index.css
+    main.jsx
+    pages/
+    utils/
+        localStorage.jsx
+vite.config.js
+```
+
+## Usage
+
+### Admin Login
+
+- Email: `admin@me.com`
+- Password: `123`
+
+### Employee Login
+
+Use the email and password of any employee from the ```localStorage.jsx file``` file.
